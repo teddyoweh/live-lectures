@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #dedede;
+
+    .left{
+        img{
+            height: 46px;
+            width: 120px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+    .right{
+        .img{
+            img{
+                height: 36px;
+                width: 36px;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+    }
+
+}

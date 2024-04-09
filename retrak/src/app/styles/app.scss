@@ -1,0 +1,246 @@
+.app{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+   
+        width: 100%;
+        height: 100%;
+  
+        .app-content{
+            width: 87%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content-box{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding: 20px;
+                .transcript-box{
+                    width: 59%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-width: 0px 2px 0px 0px;
+                    border-style: solid;
+                    border-color: #eee;
+                    .top{
+                        width: 100%;
+                        input{
+                            width: 100%;
+                       
+                            border: none;
+                            font-size: 30px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            font-family: "Google Sans";
+                   
+                            color: #0d1436;
+                            outline: none;
+                            outline-width: 0px 0px 1px;
+                            &::placeholder{
+                                color: #0d1436;
+                                font-family: "Google Sans";
+                            
+                            }
+                        }
+                    }
+                    .word-box{
+                        background-color: white;
+                        width: 100%;
+                        height: 76vh;
+                    
+                     
+                        .segbox1{
+                            margin-bottom: 10px;
+                            .transcript{
+                                background: linear-gradient(182deg, #ffffff, #fefefe);
+    width: -moz-max-content;
+    width: max-content;
+    padding: 18px;
+    border-radius: 10px;
+    font-family: "Google Sans";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 99%;
+    border-width: 0.7px;
+    border-style: solid;
+    border-color: #e5e6ec;
+    line-height: 1.8;
+                            }
+                        }
+                        
+
+                    }
+                }
+                .summary-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 39%;
+                    .bottom{
+                        width: 100%;
+                        .askbox{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            border: 1px solid;
+                            -o-border-image: linear-gradient(339deg, #3957df, #bb70ff);
+                            /* border-image: linear-gradient(339deg, #3957df, #bb70ff); */
+                            background: transparent;
+                            /* box-shadow: 0px 0px 30px #ddd; */
+                            padding: 7px;
+                            border-radius: 11px;
+                            border-color: #ddd;
+                            cursor: pointer;
+                            label{
+                                margin-right: 6px;
+                                font-family: "Google Sans";
+                                cursor: pointer;
+                            }
+                            input{
+                                width: 100%;
+                                border: none;
+                                font-size: 16px;
+                                font-weight: 600;
+                                 font-family: "Google Sans";
+                                color: #0d1436;
+                                outline: none;
+                                outline-width: 0px 0px 1px;
+                                &::placeholder{
+                                    color: #0d143650;
+                                    font-family: "Google Sans";
+                                }
+                            }
+                            a{
+                                background: linear-gradient(339deg, #3957df, #bb70ff);
+                                color: #fff;
+                                padding: 6px 20px;
+                                border-radius: 9px;
+                                font-family: "Google Sans";
+                                cursor: pointer;
+                                transition: 0.5s;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                            }
+                        }
+                    }
+                    
+                    .toptop{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .summ-day{
+                            margin-top: 24px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 17px;
+                        }
+                        .options{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            background: linear-gradient(181deg, #eeeeee, #ececec);
+                            padding: 6px;
+                            border-radius: 60px;
+                            width: max-content;
+                        
+                            .option{
+                                margin-right: 6px;
+                                font-family: "Google Sans";
+                                font-size: 14px;
+                                color: #0d1436;
+                                cursor: pointer;
+                                padding: 8px 10px;
+                                border-radius: 60px;
+                                transition: 0.5s;
+                                &:hover,&.active{
+                                    
+                                    background:  linear-gradient(339deg, #3957df, #bb70ff);;
+                                    color: #fff;
+                                    transition: all 0.5s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .action-center{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+           
+                padding-bottom: 20px;
+                .btn{
+                    background-color: #efefef;
+                    color: #fff;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    i{
+                        color: #0d1436;
+                        font-size: 20px;
+                    }
+                    label{
+                        opacity: 0;
+                        width: 0%;
+                        font-family: "Google Sans";
+                        transition: all 0.5s;
+                        cursor: pointer;
+                    }
+                    transition: all 0.5s;
+                    &.active{
+                        transition: all 0.5s;
+                        background:  linear-gradient(339deg, #3957df, #bb70ff);;
+                    }
+                    &:hover,&.active{
+                        width: 120px;
+                        transition: all 0.5s;
+                        border-radius: 60px;
+                        padding: 8px 20px;
+                        background:  linear-gradient(339deg, #3957df, #bb70ff);;
+
+                        i{
+                            color: #fff;
+                        }
+                        label{
+                            margin: 0px 5px;
+                       
+                            width: 100%;
+                        
+                           color: #fff;
+                           font-family: "Google Sans";
+                            opacity: 1;
+                            transition: all 0.5s;
+                        }
+                        
+                    }
+                }   
+            }
+
+        }
+    }
+}

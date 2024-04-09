@@ -1,0 +1,7 @@
+node_modules/
+venv/
+*.MOV
+*.pkl
+*.mp4
+*.mp3
+.env
